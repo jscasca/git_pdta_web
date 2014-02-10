@@ -1,0 +1,160 @@
+{# src/Posdta/Bundle/SiteBundle/Resources/views/Registry/index.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrate</title>
+	{% image '../app/Resources/public/img/favicon.png' %}
+	<link rel="shortcut icon" href="{{ asset_url }}">
+	{% endimage %}
+	
+	{% javascripts
+		'../app/Resources/public/js/errorHandling.js' 
+		'../app/Resources/public/js/jquery.js' %}
+	<script src="{{ asset_url }}"></script>
+	{% endjavascripts %}
+	
+	{% stylesheets 
+		'../app/Resources/public/css/style2.css' filter='cssrewrite' %}
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+</head>
+<script type="text/javascript" >
+//createUser('fn','ln','sx','2001-10-10','','pw','mail@mail.com','true');
+var dayHolder;
+var yearHolder;
+var monthHolder;
+var fn,ln,sx,ml,pw,pwcheck,ui,sc;
+
+$(document).ready(function(){
+	initialize();
+	$('#bday_month').change(function(){ getDays(parseInt($(this).val()));});
+	
+	$('#registration_submit').click(function(){registration();});
+	
+	populateYears(new Date().getFullYear());
+});
+
+function initialize() {
+	$('#sc_validation').append("<td>No soy un robot: <span style='color:red;'>*</span></td>").append("<td><input type='checkbox' id='sc' value='1' /></td>");
+	dayHolder = $('#bday_day');
+	yearHolder = $('#bday_year');
+	monthHolder = $('#bday_month');
+	monthHolder.val('00');
+	fn = $('#fn'); ln = $('#ln'); sx = $('#sx'); ml = $('#ml'); pw = $('#pw'); pwcheck = $('#pwcheck'); ui = $('#ui'); sc = $('#sc');
+}
+
+function getDays(month){
+	var days = 0;
+	switch(month){
+		case 2: days = 29; break;
+		case 4: days = 30; break;
+		case 6: days = 30; break;
+		case 9: days = 30; break;
+		case 11: days = 30; break;
+		default: days = 31; break;
+	}
+	populateDays(days);
+}
+
+function populateYears(currentYear) {
+	for(var i = currentYear - 120; i < currentYear; i++) {
+		yearHolder.append("<option value='" + i + "'>" + i + "</option>");
+	}
+}
+
+function populateDays(days){
+	dayHolder.children().remove();
+	for(var i = 1; i < 10 && i < days; i++){
+		dayHolder.append("<option value='0" + i + "'>" + i +"</option>");
+	}
+	for(var i=10; i<=days; i++){
+		
+		dayHolder.append("<option value='" + i + "'>" + i + "</option>");
+	}
+}
+
+function validateEmail(email){
+	if(email == "") return false;
+	return true;
+}
+
+function validatePasswords(pass, conf){
+	return (pass == conf);
+}
+
+function registration(){
+	if(fn.val() == ""){
+		displayWarning("Por favor dinos tu nombre",fn); return;
+	}
+	if(sx.val() == ""){
+		displayWarning("Por favor ind\u00f3canos tu sexo",sx); return;
+	}
+	if(yearHolder.val() == "00"){
+		displayWarning("Selecciona tu a\u00f1o de nacimiento",yearHolder); return;
+	}
+	if(monthHolder.val() == "00"){
+		displayWarning("Selecciona tu mes de nacimiento",monthHolder); return;
+	}
+	if(!validateEmail(ui.val())){
+		displayWarning("Verifica el formato de tu correo electr\u00F3nico",ui); return;
+	}
+	if(pw.val().length < 6){
+		displayWarning("La contrase\u00f1a debe contener al menos 6 caracteres.",pw); return;
+	}
+	if(!validatePasswords(pw.val(),pwcheck.val())){
+		displayWarning("Las contrase\u00f1as no coinciden.",pwcheck); return;
+	}
+	if(!sc.is(':checked')){
+		displayWarning("Por favor dime que no eres un robot.",sc); return; 
+	}
+	
+	createUser(fn.val(),ln.val(),sx.val(),joinDate(yearHolder.val(),monthHolder.val(),dayHolder.val()),ml.val(),pw.val(),ui.val(),sc.val());
+}
+
+function joinDate(year,month,day){
+	return year + "-" + month + "-" +day;
+}
+
+function createUser(fn,ln,sx,bd,ml,pw,ui,sc){
+	$.ajax({
+		type: "POST",
+		url: "{{ path('registry_create') }}",
+		data: "fn="+fn+"&ln="+ln+"&sx="+sx+"&bd="+bd+"&ml="+ml+"&pw="+pw+"&ui="+ui+"&sc="+sc,
+		success:function(data){
+			console.log(data);
+			var obj = jQuery.parseJSON(data);
+			if(obj.code == '0000000' ){
+				window.location.href = "{{ path('index') }}";
+			} else { displayWarningByCode(obj.code);}
+		},
+		error:function(xhr, status, text){
+			displayErrorByCode(xhr.status);
+		}
+	});
+}
+</script>
+<body style="background-image:url('{{ asset('../app/Resources/public/img/frontCover.jpg') }}');">
+<div class="container_12 clearfix">
+	<div class="grid_12 registration_form registration_padding" style="margin-top:70px;">
+		<div class="grid_6 alpha" style="padding-left:15px;">
+			<div class="grid_6 registration_image">
+			<a href="index.php"><img src="{{ asset('../app/Resources/public/img/logo.png')}}"></a><br/>
+			<img src="{{ asset('../app/Resources/public/img/register.png')}}" style="padding-top:10px;">
+		</div>
+	</div>
+	<div class="grid_5 omega registration_padding">
+		<div id="registration_form" >
+		</div>
+	</div>
+</div>
+<div class="footer clearfix">
+	<div class="container_12">
+	
+		<div class="grid_12" id="menu" style="color:rgb(255,255,255); background-color:rgba(0,0,0,0.3); margin-top:15px; border-radius:3px;">
+		Acerca | Contacto | Twitter | Facebook | Posdta (c) 2012. Todos los derechos reservados.
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

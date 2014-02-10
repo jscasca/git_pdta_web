@@ -1,0 +1,140 @@
+{# src/Posdta/Bundle/SiteBundle/Resources/views/Login/index.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrate</title>
+	{% image '../app/Resources/public/img/favicon.png' %}
+	<link rel="shortcut icon" href="{{ asset_url }}">
+	{% endimage %}
+	
+	{% javascripts
+		'../app/Resources/public/js/errorHandling.js' 
+		'../app/Resources/public/js/jquery.js' %}
+	<script src="{{ asset_url }}"></script>
+	{% endjavascripts %}
+	
+	{% stylesheets 
+		'../app/Resources/public/css/style2.css' filter='cssrewrite' %}
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+</head>
+<script type="text/javascript" >
+var ml, ps;
+$(document).ready(function(){
+	initialize();
+	
+});
+
+$(document).keypress(function(e){
+	if(e.which == 13){
+		if(ps.is(':focus')){
+			//do login
+			loginPosdta();
+		}
+		if(ml.is(':focus')){
+			//tab instead
+			ps.focus();
+		}
+	}
+	
+});
+
+function initialize() {
+	ml = $('#posdtaUser');
+	ps = $('#posdtaPass');
+}
+
+function loginPosdta() {
+	if(ml.val() == "") {
+		displayWarning("Ingresa tu correo.",ml); return; 
+	}
+	if(ps.val() == "") {
+		displayWarning("Ingresa tu pass.",ps); return; 
+	}
+	login(ml.val(), ps.val());
+}
+
+function login(user, pass) {
+	$.ajax({
+		type: "POST",
+		url: "{{ path('posdta_login') }}",
+		data: "ml="+user+"&pw="+pass,
+		success:function(data){
+			console.log(data);
+			var obj = jQuery.parseJSON(data);
+			if(obj.code == '0000000' ){
+				window.location.href = "{{ path('index') }}";
+			} else { displayWarningByCode(obj.code);}
+		},
+		error:function(xhr, status, text){
+			displayErrorByCode(xhr.status);
+		}
+	});
+}
+</script>
+<body>
+<div id="fb-root"></div>
+<!--<script type="text/javascript" src="../js/facebook_login_tool.js"></script>-->
+<div class="outside clearfix">
+	<div class="container_12">
+	
+		<div class="grid_12" id="menu">
+		<div class="grid_4 alpha translucent_black">
+		<img class="logo" src="http://www.posdta.com/web/img/logo1.png">
+			<div class="white">Mas de</br><label id="counter">700</label></br>libros leidos.</br></br>Mas de</br><label id="counter">800</label></br>libros siendo leidos.</br></br><a href="http://www.youtube.com/watch?v=LriWwcv3aOU" class="conoce_mas">Conoce mas</a></div>
+		</div>
+			<div class="grid_5 prefix_2 omega">
+				<div class="translucent_black_description title" style="text-align:center;">
+					<div class="posdtaLogin" id="dropDownPosdtaLogin">
+						<table style="width:200px; margin-right:auto; margin-left:auto;">
+						<tr><td><input class="login_fields" type="text" id="posdtaUser" placeholder="Usuario"/></td></tr>
+						<tr><td><input class="login_fields" type="password" id="posdtaPass" placeholder="Contraseña"/></td></tr>
+						<tr><td colspan="2" style="text-align:right; padding-top:5px;"><button class="button_enter" onclick="loginPosdta();">Entrar</button></td></tr>
+						</table>
+						<p style="font-size:10px; line-height:15px; margin-top:15px; margin-left:50px; text-align:left;">&iquest;A&uacute;n no tienes una cuenta? <a href="registro.php" style="color:rgb(230,157,41); font-size:10px; text-decoration:none;">Registrate</a><a href="" style="color:rgb(255,255,255); font-size:12px; text-decoration:none; margin-top:-10px;"></a>
+						<br>&iquest;Olvidaste tu contrase&ntilde;a?</a></p>
+						
+					</div><p style="font-size:15px;">Ingresar con:</p>
+					<button class="facebook" onclick="doLogin()"><img src="../appImages/rf.png" width="100" height="29"></button>
+					<button class="twitter" onclick="goTo('<?echo $twitter_url;?>');" ><img src="../appImages/rt.png" width="100" height="29"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="suggestions clearfix" style="height:400px;">
+	<div class="container_12 clearfix">
+	
+		<div class="grid_12" id="menu">
+				<div class="grid_4 alpha feature_image"><img class="suggestionsFeature" src="../appImages/suggestionsFeature.png"></div>
+				<div class="grid_5 push_3 featureContent omega translucent_white"><h1 class="featureTitle">Encuentra tu pr&oacute;xima gran historia.</h1><p class="feature_description">S&oacute;lo preoc&uacute;pate por leer, nosotros hacemos el resto. Cada que marques un libro, nosotros lo recordaremos para recomendarte siempre los mejores t&iacute;tulos seg&uacute;n tus gustos e intereses.</p></div>
+		</div>
+	</div>
+</div>
+<div class="mobilePresence clearfix" style="height:400px;">
+	<div class="container_12">
+	
+		<div class="grid_12" id="menu">
+				<div class="grid_5 featureContent translucent_white">
+				<h1 class="featureTitle">Ll&eacute;valo contigo</h1><p class="feature_description">Nunca sabes cu&aacute;ndo puedes terminar un libro y necesitar una recomendaci&oacute;n. Posdta est&aacute; disponible en tu dispositivo m&oacute;vil para que nunca pares de leer.</p>
+				<div style="margin-top:10px !important;">
+					<button style="border:none; background-color:transparent;"><img src="../appImages/appstore.png" class="appStore"></button>
+					</div>
+				</div>
+				<div class="grid_4 alpha push_1 feature_image">
+				<img src="../appImages/mobilePresence.png" class="mobilePresencePhone">
+				</div>
+		</div>
+	</div>
+</div>
+<div class="footer clearfix">
+	<div class="container_12">
+	
+		<div class="grid_12" id="menu">
+		Acerca | Contacto | Twitter | Facebook | Posdta (c) 2012. Todos los derechos reservados.
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

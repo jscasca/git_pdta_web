@@ -1,0 +1,33 @@
+
+.registration_padding
+{
+padding-top:25px;
+}
+
+.registration_form{
+background-color:rgba(0,0,0,0.7);
+border-radius:10px;
+width:95%;
+padding-top:10px;
+padding-bottom:30px;
+}
+
+.registration_image
+{
+text-align:center;
+}
+
+table.registration_table td
+{
+padding-top:3px;
+padding-bottom:5px;
+color:rgb(255,255,255);
+}
+
+td.captcha_space
+{
+padding-top:8px !important;
+padding-left:3px;
+background-color:rgb(255,255,255);
+border-radius:4px;
+}

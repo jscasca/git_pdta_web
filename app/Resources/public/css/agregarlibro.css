@@ -1,0 +1,14 @@
+table.addbooktable
+{
+	margin-top:10px;
+}
+table.addbooktable td
+{
+	padding:3px;
+}
+
+#addBook
+{
+	margin-top:15px;
+	border-top:solid 1px rgb(202,202,202);
+}

@@ -1,0 +1,99 @@
+@import url("../../../app/Resources/public/css/m.layout.css");
+@import url("../../../app/Resources/public/css/m.skeleton.css");
+@import url("../../../app/Resources/public/css/m.base.css");
+@import url("../../../app/Resources/public/css/m.header.css");
+@import url("../../../app/Resources/public/css/m.index.css");
+@import url("../../../app/Resources/public/css/m.book.css");
+@import url("../../../app/Resources/public/css/m.profile.css");
+@import url("../../../app/Resources/public/css/m.author.css");
+
+body
+{
+background-image: url('../../../app/Resources/public/img/back.png');
+}
+
+.button_generic {
+    background: -moz-linear-gradient(center top , #003C3D, #217373) repeat scroll 0 0 transparent;
+    border: medium none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-family: Helvetica,Arial,Sans-Serif;
+    font-size: 14px;
+    padding: 3.5px 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+}
+
+/*SLIDER CSS STARTS HERE*/
+/*
+ * jQuery Blueberry Slider v0.4 BETA
+ * http://marktyrrell.com/labs/blueberry/
+ *
+ * Copyright (C) 2011, Mark Tyrrell <me@marktyrrell.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+.blueberry { margin: 0 auto; }
+.blueberry .slides {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 2px !important;
+	height:120px !important;
+}
+.blueberry .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.blueberry .slides li img {
+	/*display: block;*/
+	/*width: 100%;*/
+	max-width: none;
+}
+.blueberry .slides li.active { display: block; position: relative; }
+.blueberry .crop li img { /*width: auto;*/ }
+
+.blueberry .pager {
+	height: 40px;
+	text-align: center;
+	margin-bottom: 0px !important;
+}
+.blueberry .pager li { display: inline-block; }
+.blueberry .pager li a,
+.blueberry .pager li a span {
+	display: block;
+	height: 4px;
+	width: 4px;
+}
+.blueberry .pager li a {
+	padding: 18px 8px;
+-webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.blueberry .pager li a span {
+	overflow: hidden;
+	background: #c0c0c0;
+	text-indent: -9999px;
+-webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.blueberry .pager li.active a span { background: #404040; }
+/*SLIDER CSS ENDS HERE*/

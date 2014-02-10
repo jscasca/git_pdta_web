@@ -1,0 +1,60 @@
+{# src/Posdta/Bundle/SiteBundle/Resources/views/Index/userlessIndex.html.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	{% image '../app/Resources/public/img/favicon.png' %}
+	<link rel="shortcut icon" href="{{ asset_url }}">
+	{% endimage %}
+	
+	{% javascripts
+		'../app/Resources/public/js/errorHandling.js' 
+		'../app/Resources/public/js/jquery.js' %}
+	<script src="{{ asset_url }}"></script>
+	{% endjavascripts %}
+	
+	{% stylesheets 
+		'../app/Resources/public/css/style2.css' filter='cssrewrite' %}
+	<link rel="stylesheet" href="{{ asset_url }}" />
+	{% endstylesheets %}
+</head>
+<script type="text/javascript" >
+
+$(document).ready(function(){
+	
+});
+
+</script>
+<body>
+	<div class="header">
+		<div class="container_12">
+			<!-- Posdta Logo -->
+			<div class="grid_2 alpha">
+				<img class="logo" src="../appImages/logo.png">
+			</div>
+			
+			<!-- Search Bar -->
+			<div class="grid_7 center">
+				<div class="ui-widget">
+					<input type="text" class="searchBar" id="searchBarInput" onfocus="if (this.value=='Busca tu libro...') this.value = ''" value="Busca tu libro..." onblur="if (this.value=='') this.value = 'Busca tu libro...'">
+					<img class="glass" src="../appImages/busqueda.png">
+				</div>
+			</div>
+			
+			<div class="grid_3 omega">
+				<a href="{{ path('login') }}">Login</a>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="container_12 clearfix" id="contentContainer">
+	
+	
+		<div class="grid_12 footer">
+			Siguenos en <a class="followLink" target="_blank" href="http://www.facebook.com/posdta">Facebook</a> | <a class="followLink" target="_blank" href="http://www.twitter.com/posdta">Twitter</a> | Como funciona &nbsp; | Acerca de &nbsp; | Contacto | Copyright 2012
+		</div>
+	</div>
+</body>
+
+</html>

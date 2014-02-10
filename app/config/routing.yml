@@ -1,0 +1,5 @@
+# app/config/routing.yml
+
+posdta_site:
+ resource: "@PosdtaSiteBundle/Resources/config/routing.yml"
+ prefix: /

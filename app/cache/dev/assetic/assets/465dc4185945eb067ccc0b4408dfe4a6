@@ -1,0 +1,35 @@
+﻿/*Autocomplete*/
+DIV.list_item_container {
+    height: 90px;
+    padding: 5px;
+    width:305px;
+    background-color: rgb(255,255,255);
+    border-bottom:1px solid rgb(202,202,202);
+    border-radius: 3px 3px 0px 0px;
+    color:rgb(0,0,0);
+    font-size:12px;
+    vertical-align: middle;
+}
+DIV.list_item_image {
+    width: 90px;
+    height: 80px;
+    float: left;
+    text-align:center;
+    z-index: 110;
+}
+DIV.list_item_description {
+    font-style: italic;
+    font-size: 0.8em;
+    color: black;
+}
+DIV.list_item_label
+{
+	margin-left:-2px;
+	height:auto;
+}
+
+.ui-menu-item
+{
+	width:400px !important;
+}
+/*END--Autocomplete*/

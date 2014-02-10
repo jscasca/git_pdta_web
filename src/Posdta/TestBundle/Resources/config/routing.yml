@@ -1,0 +1,5 @@
+# src/Posdta/TestBundle/Resources/config/routing.yml
+
+hello:
+ path:	/hello/{name}
+ defaults: { _controller: PosdtaTestBundle:Hello:index }

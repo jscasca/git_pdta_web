@@ -1,0 +1,29 @@
+# src/Posdta/Bundle/SiteBundle/Resources/config/routing.yml
+
+login:
+ path:	/login
+ defaults: { _controller: PosdtaSiteBundle:Login:index }
+posdta_login:
+ path:	/login/posdta
+ defaults: { _controller: PosdtaSiteBundle:Login:posdta }
+login_test:
+ path:	/login/test
+ defaults: { _controller: PosdtaSiteBundle:Login:test }
+logout:
+ path:	/logout
+ defaults: { _controller: PosdtaSiteBundle:Login:logout }
+logout_test:
+ path:	/login/posdta
+ defaults: { _controller: PosdtaSiteBundle:Login:testlogout }
+registry:
+ path:	/registry
+ defaults: { _controller: PosdtaSiteBundle:Registry:index }
+registry_create:
+ path:	/registry/create
+ defaults: { _controller: PosdtaSiteBundle:Registry:create }
+registry_test:
+ path:	/registry/test
+ defaults: { _controller: PosdtaSiteBundle:Registry:test }
+index:
+ path:	/index
+ defaults: { _controller: PosdtaSiteBundle:Index:index }

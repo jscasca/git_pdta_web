@@ -1,0 +1,137 @@
+.hiddenLink{
+	float: right;
+	margin: 0 10px 0 0;
+}
+
+.hiddenLink :link{
+	color: #121212;
+	text-decoration:underline;
+}
+
+.feedbackTitle{
+	float:left;
+	font-size:27px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.hotFeedback span{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.voteCounts{
+	float:left;
+	margin: 0 0 0 10px;
+}
+
+div.feedbackList{
+	clear: both;
+}
+
+table.hotFeedbackList{
+
+}
+
+table.hotFeedbackList td{
+	/*border: 1px #2E64FE solid;*/
+}
+
+img.pin{
+	float:left;
+	margin:13px 5px 0 10px
+}
+
+div.hotFeedback{
+	float:left;
+	margin: 10px 5px 0 0;
+}
+
+div.likebutton{
+	float:left;
+	margin: 0 5px 0 0;
+}
+
+div.dislikebutton{
+	float:left;
+	margin: 0 5px 0 0;
+}
+div.polling{
+	margin: 0 0 10px 0;
+}
+
+div.allFeedback{
+	float:left;
+	margin: 10px 5px 0 0;
+}
+
+.allFeedback span{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.feedbackDescription {
+	margin: 20px 0 10px 35px;
+	display: none;
+}
+
+.feedbackDescription span{
+	font-size: 12px;
+	font-weight: normal;
+	font-family: sans-serif;
+}
+
+button.buttonLiked{
+	background-color: #81F781;
+}
+
+button.buttonDisliked{
+	background-color: #610B0B;
+}
+
+div.feedbackForm{
+}
+
+.submitFeedbackButton{
+	float: right;
+}
+
+div.feedbackHead .head{
+	font-family: 'Helvetica';
+	font-size:25px;
+	color:#B56302;
+	font-weight:normal;
+}
+
+div.feedbackHead .body{
+	font-weight:normal;
+	font-family:'Helvetica';
+	font-size:16px;
+	color:#666666;
+}
+
+
+textarea#feedbackDescription{
+	width: 400px;
+	height: 120px;
+	padding: 5px;
+	border-radius:4px;
+	margin: 10px 0 10px 10px;
+	
+}
+
+input#feedbackShort{
+	border-radius:4px;
+	height: 35px;
+	width: 400px;
+	margin: 10px 0 10px 10px;
+}
+
+
+table.feedback_table td
+{
+padding-left:3px;
+padding-right:3px;
+}
