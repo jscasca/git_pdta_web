@@ -64,4 +64,50 @@ return array (
       ),
     ),
   ),
+  'c15f12f' => 
+  array (
+    0 => 
+    array (
+      0 => '../app/Resources/public/js/monocore.js',
+      1 => '../app/Resources/public/js/monoctrl.js',
+      2 => '../app/Resources/public/js/errorHandling.js',
+      3 => '../app/Resources/public/js/jquery.js',
+    ),
+    1 => 
+    array (
+    ),
+    2 => 
+    array (
+      'output' => '_controller/js/c15f12f.js',
+      'name' => 'c15f12f',
+      'debug' => NULL,
+      'combine' => NULL,
+      'vars' => 
+      array (
+      ),
+    ),
+  ),
+  '66cc442' => 
+  array (
+    0 => 
+    array (
+      0 => '../app/Resources/public/css/monocore.css',
+      1 => '../app/Resources/public/css/monoctrl.css',
+      2 => '../app/Resources/public/css/style2.css',
+    ),
+    1 => 
+    array (
+      0 => 'cssrewrite',
+    ),
+    2 => 
+    array (
+      'output' => '_controller/css/66cc442.css',
+      'name' => '66cc442',
+      'debug' => NULL,
+      'combine' => NULL,
+      'vars' => 
+      array (
+      ),
+    ),
+  ),
 );

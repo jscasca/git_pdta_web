@@ -74,6 +74,69 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/js/c15f12f')) {
+            // _assetic_c15f12f
+            if ($pathinfo === '/js/c15f12f.js') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'c15f12f',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_c15f12f',);
+            }
+
+            if (0 === strpos($pathinfo, '/js/c15f12f_')) {
+                if (0 === strpos($pathinfo, '/js/c15f12f_monoc')) {
+                    // _assetic_c15f12f_0
+                    if ($pathinfo === '/js/c15f12f_monocore_1.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'c15f12f',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_c15f12f_0',);
+                    }
+
+                    // _assetic_c15f12f_1
+                    if ($pathinfo === '/js/c15f12f_monoctrl_2.js') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => 'c15f12f',  'pos' => 1,  '_format' => 'js',  '_route' => '_assetic_c15f12f_1',);
+                    }
+
+                }
+
+                // _assetic_c15f12f_2
+                if ($pathinfo === '/js/c15f12f_errorHandling_3.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'c15f12f',  'pos' => 2,  '_format' => 'js',  '_route' => '_assetic_c15f12f_2',);
+                }
+
+                // _assetic_c15f12f_3
+                if ($pathinfo === '/js/c15f12f_jquery_4.js') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'c15f12f',  'pos' => 3,  '_format' => 'js',  '_route' => '_assetic_c15f12f_3',);
+                }
+
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/css/66cc442')) {
+            // _assetic_66cc442
+            if ($pathinfo === '/css/66cc442.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '66cc442',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_66cc442',);
+            }
+
+            if (0 === strpos($pathinfo, '/css/66cc442_')) {
+                if (0 === strpos($pathinfo, '/css/66cc442_monoc')) {
+                    // _assetic_66cc442_0
+                    if ($pathinfo === '/css/66cc442_monocore_1.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '66cc442',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_66cc442_0',);
+                    }
+
+                    // _assetic_66cc442_1
+                    if ($pathinfo === '/css/66cc442_monoctrl_2.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '66cc442',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_66cc442_1',);
+                    }
+
+                }
+
+                // _assetic_66cc442_2
+                if ($pathinfo === '/css/66cc442_style2_3.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '66cc442',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_66cc442_2',);
+                }
+
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/_')) {
             // _wdt
             if (0 === strpos($pathinfo, '/_wdt') && preg_match('#^/_wdt/(?P<token>[^/]++)$#s', $pathinfo, $matches)) {
@@ -178,6 +241,24 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     return array (  '_controller' => 'Sensio\\Bundle\\DistributionBundle\\Controller\\ConfiguratorController::finalAction',  '_route' => '_configurator_final',);
                 }
 
+            }
+
+        }
+
+        if (0 === strpos($pathinfo, '/reader')) {
+            // reader
+            if ($pathinfo === '/reader') {
+                return array (  '_controller' => 'Posdta\\Bundle\\SiteBundle\\Controller\\ReaderController::indexAction',  '_route' => 'reader',);
+            }
+
+            // reader_test
+            if ($pathinfo === '/reader/test') {
+                return array (  '_controller' => 'Posdta\\Bundle\\SiteBundle\\Controller\\ReaderController::hardcomponentAction',  '_route' => 'reader_test',);
+            }
+
+            // reader_components
+            if (preg_match('#^/reader/(?P<book>[^/]++)/(?P<component>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'reader_components')), array (  '_controller' => 'Posdta\\Bundle\\SiteBundle\\Controller\\ReaderController::componentAction',));
             }
 
         }

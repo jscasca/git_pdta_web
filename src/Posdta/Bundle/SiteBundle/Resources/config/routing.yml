@@ -1,5 +1,14 @@
 # src/Posdta/Bundle/SiteBundle/Resources/config/routing.yml
 
+reader:
+ path:	/reader
+ defaults: { _controller: PosdtaSiteBundle:Reader:index }
+reader_test:
+ path:	/reader/test
+ defaults: { _controller: PosdtaSiteBundle:Reader:hardcomponent }
+reader_components:
+ path:	/reader/{book}/{component}
+ defaults: { _controller: PosdtaSiteBundle:Reader:component }
 login:
  path:	/login
  defaults: { _controller: PosdtaSiteBundle:Login:index }
