@@ -58,7 +58,7 @@ class ReaderController extends Controller {
 			return new Response('<h1>An error ocurred</h1>');
 		}
 		$componentData = file_get_contents($component->getPublication()->getLocation().'/OEBPS/Text/'.$component->getSource());
-		$componentData = preg_replace('"../([a-zA-Z/]+[a-zA-Z0-9\\.]+(?:css|png|jpg|gif|jpeg))"',$component->getPublication()->getLocation().'/OEBPS/$1',$componentData);
+		$componentData = preg_replace('"../([a-zA-Z/]+[a-zA-Z0-9\\.]+(?:css|png|jpg|gif|jpeg))"',str_replace("../","/git_pdta_web/",$component->getPublication()->getLocation().'/OEBPS/$1'),$componentData);
 		return new Response($componentData);
 	}
 }
