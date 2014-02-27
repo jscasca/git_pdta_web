@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+ "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="urn:uuid:c8d77bf8-0bd9-4cfd-8052-d9aa54124020" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Captains Courageous</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-1" playOrder="1">
+      <navLabel>
+        <text>COVER</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous.htm"/>
+    </navPoint>
+    <navPoint id="navPoint-2" playOrder="2">
+      <navLabel>
+        <text>TITLE PAGE</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0001.html"/>
+    </navPoint>
+    <navPoint id="navPoint-3" playOrder="3">
+      <navLabel>
+        <text>TABLE of CONTENTS</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0002.html"/>
+    </navPoint>
+    <navPoint id="navPoint-4" playOrder="4">
+      <navLabel>
+        <text>LIST of ILLUSTRATIONS</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0003.html"/>
+    </navPoint>
+    <navPoint id="navPoint-5" playOrder="5">
+      <navLabel>
+        <text>FRONTPIECE: Harvey</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0004.html"/>
+    </navPoint>
+    <navPoint id="navPoint-6" playOrder="6">
+      <navLabel>
+        <text>DEDICATION</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0005.html"/>
+    </navPoint>
+    <navPoint id="navPoint-7" playOrder="7">
+      <navLabel>
+        <text>CHAPTER I</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0006.html"/>
+    </navPoint>
+    <navPoint id="navPoint-8" playOrder="8">
+      <navLabel>
+        <text>CHAPTER II</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0007.html"/>
+      <navPoint id="navPoint-9" playOrder="9">
+        <navLabel>
+          <text>ILLUS: Then a low, gray mother-wave ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0007.html#image01"/>
+      </navPoint>
+      <navPoint id="navPoint-10" playOrder="10">
+        <navLabel>
+          <text>ILLUS: The "We're Here."</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0007.html#image02"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-11" playOrder="11">
+      <navLabel>
+        <text>CHAPTER III</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0008.html"/>
+      <navPoint id="navPoint-12" playOrder="12">
+        <navLabel>
+          <text>ILLUS: "I'll lay my wage ..."</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0008.html#image03"/>
+      </navPoint>
+      <navPoint id="navPoint-13" playOrder="13">
+        <navLabel>
+          <text>ILLUS: A few seconds later ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0008.html#image04"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-14" playOrder="14">
+      <navLabel>
+        <text>CHAPTER IV</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0009.html"/>
+      <navPoint id="navPoint-15" playOrder="15">
+        <navLabel>
+          <text>ILLUS: They ran down to where ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0009.html#image06"/>
+      </navPoint>
+      <navPoint id="navPoint-16" playOrder="16">
+        <navLabel>
+          <text>ILLUS: A whiteness moved in ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0009.html#image07"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-17" playOrder="17">
+      <navLabel>
+        <text>CHAPTER V</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0010.html"/>
+      <navPoint id="navPoint-18" playOrder="18">
+        <navLabel>
+          <text>ILLUS: "There were days ..."</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0010.html#image08"/>
+      </navPoint>
+      <navPoint id="navPoint-19" playOrder="19">
+        <navLabel>
+          <text>ILLUS: "Hi! Say! Arretez vous! Attendez! ..."</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0010.html#image09"/>
+      </navPoint>
+      <navPoint id="navPoint-20" playOrder="20">
+        <navLabel>
+          <text>ILLUS: Dressin down ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0010.html#image10"/>
+      </navPoint>
+      <navPoint id="navPoint-21" playOrder="21">
+        <navLabel>
+          <text>ILLUS: It was wonderful fishing ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0010.html#image11"/>
+      </navPoint>
+      <navPoint id="navPoint-22" playOrder="22">
+        <navLabel>
+          <text>ILLUS: Dories came along side ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0010.html#image12"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-23" playOrder="23">
+      <navLabel>
+        <text>CHAPTER VI</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0011.html"/>
+    </navPoint>
+    <navPoint id="navPoint-24" playOrder="24">
+      <navLabel>
+        <text>CHAPTER VII</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0012.html"/>
+    </navPoint>
+    <navPoint id="navPoint-25" playOrder="25">
+      <navLabel>
+        <text>CHAPTER VIII</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0013.html"/>
+      <navPoint id="navPoint-26" playOrder="26">
+        <navLabel>
+          <text>ILLUS: He must needs stand up to it ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0013.html#image13"/>
+      </navPoint>
+      <navPoint id="navPoint-27" playOrder="27">
+        <navLabel>
+          <text>ILLUS: It was wonderful fishing ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0013.html#image14"/>
+      </navPoint>
+      <navPoint id="navPoint-28" playOrder="28">
+        <navLabel>
+          <text>ILLUS: Dressing down ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0013.html#image15"/>
+      </navPoint>
+      <navPoint id="navPoint-29" playOrder="29">
+        <navLabel>
+          <text>ILLUS: Dories came along side ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0013.html#image16"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-30" playOrder="30">
+      <navLabel>
+        <text>CHAPTER IX</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0014.html"/>
+    </navPoint>
+    <navPoint id="navPoint-31" playOrder="31">
+      <navLabel>
+        <text>CHAPTER X</text>
+      </navLabel>
+      <content src="Text/Captains%20Courageous_0015.html"/>
+      <navPoint id="navPoint-32" playOrder="32">
+        <navLabel>
+          <text>ILLUS: His father turned ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0015.html#image17"/>
+      </navPoint>
+      <navPoint id="navPoint-33" playOrder="33">
+        <navLabel>
+          <text>ILLUS: "The Constance"</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0015.html#image18"/>
+      </navPoint>
+      <navPoint id="navPoint-34" playOrder="34">
+        <navLabel>
+          <text>ILLUS: Mrs. Cheyne introduces the crew ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0015.html#image19"/>
+      </navPoint>
+      <navPoint id="navPoint-35" playOrder="35">
+        <navLabel>
+          <text>ILLUS: Bidding farewell ...</text>
+        </navLabel>
+        <content src="Text/Captains%20Courageous_0015.html#image20"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

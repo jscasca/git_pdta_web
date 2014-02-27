@@ -246,6 +246,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/reader')) {
+            // read_book
+            if (preg_match('#^/reader/(?P<publicationId>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'read_book')), array (  '_controller' => 'Posdta\\Bundle\\SiteBundle\\Controller\\ReaderController::readAction',));
+            }
+
             // reader
             if ($pathinfo === '/reader') {
                 return array (  '_controller' => 'Posdta\\Bundle\\SiteBundle\\Controller\\ReaderController::indexAction',  '_route' => 'reader',);
@@ -256,11 +261,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'Posdta\\Bundle\\SiteBundle\\Controller\\ReaderController::hardcomponentAction',  '_route' => 'reader_test',);
             }
 
-            // reader_components
-            if (preg_match('#^/reader/(?P<book>[^/]++)/(?P<component>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'reader_components')), array (  '_controller' => 'Posdta\\Bundle\\SiteBundle\\Controller\\ReaderController::componentAction',));
-            }
+        }
 
+        // reader_components
+        if (0 === strpos($pathinfo, '/component') && preg_match('#^/component/(?P<componentId>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'reader_components')), array (  '_controller' => 'Posdta\\Bundle\\SiteBundle\\Controller\\ReaderController::componentAction',));
         }
 
         if (0 === strpos($pathinfo, '/log')) {

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:title>Alice in Wonderland</dc:title>
+    <dc:creator opf:file-as="Carroll, Lewis" opf:role="aut">Lewis Carroll</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:date opf:event="original-publication">1916</dc:date>
+    <dc:identifier id="BookId">http://www.magicscroll.net/samplebooks/alice.epub</dc:identifier>
+    <dc:subject>Young Readers</dc:subject>
+    <dc:subject>Fantasy</dc:subject>
+    <dc:date>2011-12-05</dc:date>
+    <meta name="cover" content="img-bookcover-jpeg" />
+    <meta content="0.4.2" name="Sigil version" />
+  </metadata>
+  <manifest>
+    <!-- Content Documents -->
+    <item href="Text/coverpage.html" id="coverpage" media-type="application/xhtml+xml" />
+    <item href="Text/title.html" id="titlepage" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-001.html" id="chapter-001" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-002.html" id="chapter-002" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-003.html" id="chapter-003" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-004.html" id="chapter-004" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-005.html" id="chapter-005" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-006.html" id="chapter-006" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-007.html" id="chapter-007" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-008.html" id="chapter-008" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-009.html" id="chapter-009" media-type="application/xhtml+xml" />
+    <item href="Text/chapter-010.html" id="chapter-010" media-type="application/xhtml+xml" />
+    <!-- CSS Style Sheets -->
+    <item href="Styles/alice.css" id="alice-css" media-type="text/css" />
+    <!-- Images -->
+    <item href="Images/bookcover.jpg" id="img-bookcover-jpeg" media-type="image/jpeg" />
+    <item href="Images/i001.jpg" id="img-i001-jpeg" media-type="image/jpeg" />
+    <item href="Images/i002.jpg" id="img-i002-jpeg" media-type="image/jpeg" />
+    <item href="Images/i003.jpg" id="img-i003-jpeg" media-type="image/jpeg" />
+    <item href="Images/i004.jpg" id="img-i004-jpeg" media-type="image/jpeg" />
+    <item href="Images/i005.jpg" id="img-i005-jpeg" media-type="image/jpeg" />
+    <item href="Images/i006.jpg" id="img-i006-jpeg" media-type="image/jpeg" />
+    <item href="Images/i007.jpg" id="img-i007-jpeg" media-type="image/jpeg" />
+    <item href="Images/i008.jpg" id="img-i008-jpeg" media-type="image/jpeg" />
+    <item href="Images/i009.jpg" id="img-i009-jpeg" media-type="image/jpeg" />
+    <item href="Images/i010.jpg" id="img-i010-jpeg" media-type="image/jpeg" />
+    <item href="Images/i011.jpg" id="img-i011-jpeg" media-type="image/jpeg" />
+    <item href="Images/i012.jpg" id="img-i012-jpeg" media-type="image/jpeg" />
+    <item href="Images/i013.jpg" id="img-i013-jpeg" media-type="image/jpeg" />
+    <item href="Images/i014.jpg" id="img-i014-jpeg" media-type="image/jpeg" />
+    <item href="Images/i015.jpg" id="img-i015-jpeg" media-type="image/jpeg" />
+    <item href="Images/i016.jpg" id="img-i016-jpeg" media-type="image/jpeg" />
+    <item href="Images/i017.jpg" id="img-i017-jpeg" media-type="image/jpeg" />
+    <item href="Images/i018.jpg" id="img-i018-jpeg" media-type="image/jpeg" />
+    <item href="Images/i019.jpg" id="img-i019-jpeg" media-type="image/jpeg" />
+    <item href="Images/i020.jpg" id="img-i020-jpeg" media-type="image/jpeg" />
+    <item href="Images/i021.jpg" id="img-i021-jpeg" media-type="image/jpeg" />
+    <item href="Images/i022.jpg" id="img-i022-jpeg" media-type="image/jpeg" />
+    <item href="Images/plate01.jpg" id="img-plate01-jpeg" media-type="image/jpeg" />
+    <item href="Images/plate02.jpg" id="img-plate02-jpeg" media-type="image/jpeg" />
+    <item href="Images/plate03.jpg" id="img-plate03-jpeg" media-type="image/jpeg" />
+    <item href="Images/plate04.jpg" id="img-plate04-jpeg" media-type="image/jpeg" />
+    <item href="Images/title.jpg" id="img-title-jpeg" media-type="image/jpeg" />
+    <!-- NCX -->
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="coverpage" linear="yes" />
+    <itemref idref="titlepage" linear="yes" />
+    <itemref idref="chapter-001" linear="yes" />
+    <itemref idref="chapter-002" linear="yes" />
+    <itemref idref="chapter-003" linear="yes" />
+    <itemref idref="chapter-004" linear="yes" />
+    <itemref idref="chapter-005" linear="yes" />
+    <itemref idref="chapter-006" linear="yes" />
+    <itemref idref="chapter-007" linear="yes" />
+    <itemref idref="chapter-008" linear="yes" />
+    <itemref idref="chapter-009" linear="yes" />
+    <itemref idref="chapter-010" linear="yes" />
+  </spine>
+  <guide>
+    <reference href="Text/coverpage.html" title="Cover" type="cover" />
+  </guide>
+</package>

@@ -1,0 +1,89 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:creator opf:role="aut" opf:file-as="Kipling, Rudyard">Rudyard Kipling</dc:creator>
+<dc:identifier id="BookId" opf:scheme="UUID">urn:uuid:c8d77bf8-0bd9-4cfd-8052-d9aa54124020</dc:identifier>
+    <dc:description>&lt;p class="description"&gt;Ebook prepared by crutledge@knology.net&lt;/p&gt;</dc:description>
+    <dc:rights>Public domain in Canada</dc:rights>
+    <dc:title>Captains Courageous</dc:title>
+    <meta content="0.6.0" name="Sigil version"/>
+    <dc:date>2012-10-29T05:00:00+00:00</dc:date>
+    <meta name="cover" content="cover.jpg"/>
+  <meta name="calibre:title_sort" content="Captains Courageous"/>
+<dc:subject>Action &amp; Adventure</dc:subject>
+<dc:contributor opf:role="bkp">calibre (0.9.4) [http://calibre-ebook.com]</dc:contributor>
+<meta name="calibre:user_categories" content="{}"/>
+<meta name="calibre:author_link_map" content="{&quot;Rudyard Kipling&quot;: &quot;&quot;}"/>
+<dc:language>en</dc:language>
+</metadata>
+  <manifest>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Styles/main.css" id="main.css" media-type="text/css"/>
+    <item href="Images/cover.jpg" id="cover.jpg" media-type="image/jpeg"/>
+    <item href="Images/TitlePage.jpg" id="TitlePage.jpg" media-type="image/jpeg"/>
+    <item href="Images/front.jpg" id="front.jpg" media-type="image/jpeg"/>
+    <item href="Images/ChapterEnd.png" id="ChapterEnd.png" media-type="image/png"/>
+    <item href="Images/image01.jpg" id="image01.jpg" media-type="image/jpeg"/>
+    <item href="Images/image02.jpg" id="image02.jpg" media-type="image/jpeg"/>
+    <item href="Images/image03.jpg" id="image03.jpg" media-type="image/jpeg"/>
+    <item href="Images/image04.jpg" id="image04.jpg" media-type="image/jpeg"/>
+    <item href="Images/image05.jpg" id="image05.jpg" media-type="image/jpeg"/>
+    <item href="Images/image06.jpg" id="image06.jpg" media-type="image/jpeg"/>
+    <item href="Images/image07.jpg" id="image07.jpg" media-type="image/jpeg"/>
+    <item href="Images/image08.jpg" id="image08.jpg" media-type="image/jpeg"/>
+    <item href="Images/image09.jpg" id="image09.jpg" media-type="image/jpeg"/>
+    <item href="Images/image10.jpg" id="image10.jpg" media-type="image/jpeg"/>
+    <item href="Images/image11.jpg" id="image11.jpg" media-type="image/jpeg"/>
+    <item href="Images/image12.jpg" id="image12.jpg" media-type="image/jpeg"/>
+    <item href="Images/image13.jpg" id="image13.jpg" media-type="image/jpeg"/>
+    <item href="Images/image14.jpg" id="image14.jpg" media-type="image/jpeg"/>
+    <item href="Images/image15.jpg" id="image15.jpg" media-type="image/jpeg"/>
+    <item href="Images/image16.jpg" id="image16.jpg" media-type="image/jpeg"/>
+    <item href="Images/image17.jpg" id="image17.jpg" media-type="image/jpeg"/>
+    <item href="Images/image18.jpg" id="image18.jpg" media-type="image/jpeg"/>
+    <item href="Images/image19.jpg" id="image19.jpg" media-type="image/jpeg"/>
+    <item href="Images/image20.jpg" id="image20.jpg" media-type="image/jpeg"/>
+    <item href="Images/Cartouche.jpg" id="Cartouche.jpg" media-type="image/jpeg"/>
+    <item href="Text/Captains Courageous.htm" id="Captains_Courageous.htm" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0003.html" id="Captains_Courageous_0003.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0004.html" id="Captains_Courageous_0004.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0002.html" id="Captains_Courageous_0002.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0006.html" id="Captains_Courageous_0006.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0008.html" id="Captains_Courageous_0008.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0001.html" id="Captains_Courageous_0001.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0005.html" id="Captains_Courageous_0005.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0007.html" id="Captains_Courageous_0007.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0009.html" id="Captains_Courageous_0009.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0010.html" id="Captains_Courageous_0010.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0011.html" id="Captains_Courageous_0011.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0013.html" id="Captains_Courageous_0013.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0012.html" id="Captains_Courageous_0012.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0014.html" id="Captains_Courageous_0014.html" media-type="application/xhtml+xml"/>
+    <item href="Text/Captains Courageous_0015.html" id="Captains_Courageous_0015.html" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="Captains_Courageous.htm"/>
+    <itemref idref="Captains_Courageous_0001.html"/>
+    <itemref idref="Captains_Courageous_0002.html"/>
+    <itemref idref="Captains_Courageous_0003.html"/>
+    <itemref idref="Captains_Courageous_0004.html"/>
+    <itemref idref="Captains_Courageous_0005.html"/>
+    <itemref idref="Captains_Courageous_0006.html"/>
+    <itemref idref="Captains_Courageous_0007.html"/>
+    <itemref idref="Captains_Courageous_0008.html"/>
+    <itemref idref="Captains_Courageous_0009.html"/>
+    <itemref idref="Captains_Courageous_0010.html"/>
+    <itemref idref="Captains_Courageous_0011.html"/>
+    <itemref idref="Captains_Courageous_0012.html"/>
+    <itemref idref="Captains_Courageous_0013.html"/>
+    <itemref idref="Captains_Courageous_0014.html"/>
+    <itemref idref="Captains_Courageous_0015.html"/>
+  </spine>
+  <guide>
+    <reference href="Text/Captains Courageous.htm" title="Cover" type="cover"/>
+    <reference href="Text/Captains Courageous_0001.html" title="Title Page" type="title-page"/>
+    <reference href="Text/Captains Courageous_0002.html" title="Table Of Contents" type="toc"/>
+    <reference href="Text/Captains Courageous_0003.html" title="List Of Illustrations" type="loi"/>
+    <reference href="Text/Captains Courageous_0004.html" title="Start Reading" type="start"/>
+  </guide>
+</package>

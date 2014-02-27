@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+   <head>
+      <!--The following four metadata items are required for all
+            NCX documents, including those conforming to the relaxed
+            constraints of OPS 2.0-->
+      <meta content="18F2A49D-6C0C-1014-8B7D-CAF3C0543BE0" name="dtb:uid"/>
+      <meta content="epubBooks (www.epubbooks.com)" name="epub-creator"/>
+      <meta content="1" name="dtb:depth"/>
+      <meta content="0" name="dtb:totalPageCount"/>
+      <meta content="0" name="dtb:maxPageNumber"/>
+   </head>
+   <docTitle>
+      <text>Peter and Wendy</text>
+   </docTitle>
+   <docAuthor>
+      <text>James Matthew Barrie</text>
+   </docAuthor>
+   <navMap>
+      <navPoint id="navpoint-1" playOrder="1">
+         <navLabel>
+            <text>Peter Pan</text>
+         </navLabel>
+         <content src="Text/coverpage.html"/>
+      </navPoint>
+     
+      <navPoint id="navpoint-2" playOrder="2">
+         <navLabel>
+            <text>CHAPTER I</text>
+         </navLabel>
+         <content src="Text/chapter-001.html"/>
+      </navPoint>
+      <navPoint id="navpoint-3" playOrder="3">
+         <navLabel>
+            <text>CHAPTER II</text>
+         </navLabel>
+         <content src="Text/chapter-002.html"/>
+      </navPoint>
+      <navPoint id="navpoint-4" playOrder="4">
+         <navLabel>
+            <text>CHAPTER III</text>
+         </navLabel>
+         <content src="Text/chapter-003.html"/>
+      </navPoint>
+      <navPoint id="navpoint-5" playOrder="5">
+         <navLabel>
+            <text>CHAPTER IV</text>
+         </navLabel>
+         <content src="Text/chapter-004.html"/>
+      </navPoint>
+      <navPoint id="navpoint-6" playOrder="6">
+         <navLabel>
+            <text>CHAPTER V</text>
+         </navLabel>
+         <content src="Text/chapter-005.html"/>
+      </navPoint>
+      <navPoint id="navpoint-7" playOrder="7">
+         <navLabel>
+            <text>CHAPTER VI</text>
+         </navLabel>
+         <content src="Text/chapter-006.html"/>
+      </navPoint>
+      <navPoint id="navpoint-8" playOrder="8">
+         <navLabel>
+            <text>CHAPTER VII</text>
+         </navLabel>
+         <content src="Text/chapter-007.html"/>
+      </navPoint>
+      <navPoint id="navpoint-9" playOrder="9">
+         <navLabel>
+            <text>CHAPTER VIII</text>
+         </navLabel>
+         <content src="Text/chapter-008.html"/>
+      </navPoint>
+      <navPoint id="navpoint-10" playOrder="10">
+         <navLabel>
+            <text>CHAPTER IX</text>
+         </navLabel>
+         <content src="Text/chapter-009.html"/>
+      </navPoint>
+      <navPoint id="navpoint-11" playOrder="11">
+         <navLabel>
+            <text>CHAPTER X</text>
+         </navLabel>
+         <content src="Text/chapter-010.html"/>
+      </navPoint>
+      <navPoint id="navpoint-12" playOrder="12">
+         <navLabel>
+            <text>CHAPTER XI</text>
+         </navLabel>
+         <content src="Text/chapter-011.html"/>
+      </navPoint>
+      <navPoint id="navpoint-13" playOrder="13">
+         <navLabel>
+            <text>CHAPTER XII</text>
+         </navLabel>
+         <content src="Text/chapter-012.html"/>
+      </navPoint>
+      <navPoint id="navpoint-14" playOrder="14">
+         <navLabel>
+            <text>CHAPTER XIII</text>
+         </navLabel>
+         <content src="Text/chapter-013.html"/>
+      </navPoint>
+      <navPoint id="navpoint-15" playOrder="15">
+         <navLabel>
+            <text>CHAPTER XIV</text>
+         </navLabel>
+         <content src="Text/chapter-014.html"/>
+      </navPoint>
+      <navPoint id="navpoint-16" playOrder="16">
+         <navLabel>
+            <text>CHAPTER XV</text>
+         </navLabel>
+         <content src="Text/chapter-015.html"/>
+      </navPoint>
+      <navPoint id="navpoint-17" playOrder="17">
+         <navLabel>
+            <text>CHAPTER XVI</text>
+         </navLabel>
+         <content src="Text/chapter-016.html"/>
+      </navPoint>
+      <navPoint id="navpoint-18" playOrder="18">
+         <navLabel>
+            <text>CHAPTER XVII</text>
+         </navLabel>
+         <content src="Text/chapter-017.html"/>
+      </navPoint>
+   </navMap>
+</ncx>
